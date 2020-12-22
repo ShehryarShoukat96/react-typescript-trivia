@@ -1,6 +1,8 @@
-export const sum = (a: number, b: number) => {
-  if ('development' === process.env.NODE_ENV) {
-    console.log('boop');
+class Index {
+  constructor() {
+    console.log(`constructor called `);
   }
-  return a + b;
-};
+}
+
+const index = new Index();
+console.log(index);
