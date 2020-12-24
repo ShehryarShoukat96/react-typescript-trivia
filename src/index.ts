@@ -1,8 +1,9 @@
-class Index {
-  constructor() {
-    console.log(`constructor called `);
+export class Index {
+  id: string;
+  constructor(id: string) {
+    this.id = id;
   }
 }
 
-const index = new Index();
+const index = new Index('check');
 console.log(index);
